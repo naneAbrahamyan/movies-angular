@@ -1,0 +1,48 @@
+<div class="container">
+
+    <form class="add-form" (ngSubmit)="onSubmit()">
+        <div class="form-flex">
+            <div class="form-control">
+                <label for="text">Name</label>
+                <input
+                  class = "input long"
+                  type="text"
+                  name="name"
+                  [(ngModel)]="name"
+                  id="name"
+                  placeholder="Add Task"
+                />
+              </div>
+
+              <div class="form-control">
+                <label for="day">Amount</label>
+                <input
+                  class = "input"
+                  type="number"
+                  name="amount"
+                  [(ngModel)]="amount"
+                  id="amount"
+                  placeholder="Amount"
+                />
+              </div>
+        </div>
+       
+      
+        <input class="submitButton green" *ngIf="isNew; else editForm" type="submit" value="Add" [disabled] = "!amount || !name"/>
+        <ng-template #editForm>
+            <input class="submitButton green" type="submit" value="Update" [disabled] = "!amount || !name"/>
+            <button class="red" type="button" (click) = "onRemove()"> Delete </button>
+       </ng-template>
+        <button class="blue" type="button" (click) = "onClear()"> Clear </button>
+
+      </form>
+
+<ul>
+    <app-shopping-list-item *ngFor="let item of shoppingList; let index = index" [item]="item" (onClick) = "onClick($event)"></app-shopping-list-item>
+</ul>
+
+
+     
+
+</div>
+
