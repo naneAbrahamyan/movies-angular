@@ -14,7 +14,6 @@ const appRoutes: Routes = [
   { path: '', component: RecipeBookComponent },
   { path: 'recipe', component: RecipesComponent },
   { path: 'shopping-list', component: ShoppingListComponent },
-
 ];
 
 @NgModule({
@@ -25,7 +24,6 @@ const appRoutes: Routes = [
     RecipesComponent,
     ShoppingListComponent,
     ShoppingListItemComponent,
-
   ],
   imports: [
     BrowserModule,
@@ -33,6 +31,6 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes, { enableTracing: true }),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

@@ -1,9 +1,9 @@
-li{ 
-    list-style-type: none;
-    background-color: white;
-    color:#555;
-    padding: 1px;
-    margin: 1px;
-    border-radius: 3px;
-    font-size: 14px;
+li {
+  list-style-type: none;
+  background-color: white;
+  color: #555;
+  padding: 1px;
+  margin: 1px;
+  border-radius: 3px;
+  font-size: 14px;
 }

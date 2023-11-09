@@ -1,9 +1,8 @@
-.container{
-    height: 100vh;
-    background: transparent; /* Set the container's background to transparent */
-    background-image: url('https://blog.storyblocks.com/wp-content/uploads/2017/08/blurred-background-sample.png');
-    background-size: contain; /* Adjust background size as needed */
-    border: 20px solid rgba(255,168,244,.3);
-    padding: 20px;
+.container {
+  height: 100vh;
+  background: transparent; /* Set the container's background to transparent */
+  background-image: url("https://blog.storyblocks.com/wp-content/uploads/2017/08/blurred-background-sample.png");
+  background-size: contain; /* Adjust background size as needed */
+  border: 20px solid rgba(255, 168, 244, 0.3);
+  padding: 20px;
 }
-

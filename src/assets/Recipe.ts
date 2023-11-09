@@ -1,11 +1,11 @@
 interface Ingredient {
-    [key: string]: number;
-  }
+  [key: string]: number;
+}
 
 export interface Recipe {
-    id: number;
-    name:string;
-    description: string;
-    uri: string;
-    ingredients:Ingredient
+  id: number;
+  name: string;
+  description: string;
+  uri: string;
+  ingredients: Ingredient;
 }
