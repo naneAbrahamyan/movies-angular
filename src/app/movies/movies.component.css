@@ -1,0 +1,83 @@
+.container {
+    width: 100%;
+    padding: 50px 10px;
+    overflow: hidden;
+  }
+  
+  .main{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+  
+  input{
+    background-color: inherit;
+    border: none;
+    color: white;
+    flex-grow: 1;
+  }
+  
+  
+  .searchBar{
+    width: 100%;
+    margin-inline: 100px;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding-block: 10px;
+    padding-inline: 10px;
+    background-color: #0c0b21 ;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  input:focus {
+    outline: none;
+  }
+  
+  
+  .logo {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .movies-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+  }
+  .movie-card {
+    width: 300px;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-block: 20px;
+    background-color: rgba(255, 255, 255, 0.5); 
+  }
+  
+  .content {
+    display: flex;
+    align-items: flex-end;
+    height: inherit;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  a{
+    display: flex;
+    align-items: flex-end;
+    height: inherit;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+  
+  button{
+    background-color: inherit;
+    outline: none;
+    border: none;
+  }

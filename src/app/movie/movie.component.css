@@ -1,0 +1,29 @@
+.container{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img{
+    /* padding: 20px; */
+    max-width: 500px;
+    height: 600px;
+}
+.image-container{
+    max-width: 400px;
+    height: 600px;
+}
+.info{
+    margin:40px;
+    flex-grow: 1;
+}
+
+@media  (min-width: 900px) {
+   .container{
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row;
+   }
+  }
