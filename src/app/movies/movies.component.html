@@ -16,6 +16,11 @@
     <h1>
       Movies
      </h1>
+    <div class="slider">
+      <app-slider [data]="passedValue"></app-slider>
+    </div>
+
+
     <div class="movies-list">
       <div *ngFor="let movie of (search.length > 0 ? search : data)" class="movie-card" [style.background-image] =  "'url(' + 'https://image.tmdb.org/t/p/w500/' + movie['poster_path'] + ')'">
         <a [routerLink]="'/details/' + movie['id']" >

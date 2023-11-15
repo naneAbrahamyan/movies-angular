@@ -6,6 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { MovieComponent } from './movie/movie.component';
 import { MoviesComponent } from './movies/movies.component';
+import { SliderComponent } from './slider/slider.component';
 
 const appRoutes: Routes = [
   {path: '', component: MoviesComponent},
@@ -19,6 +20,7 @@ const appRoutes: Routes = [
     AppComponent,
     MovieComponent,
     MoviesComponent,
+    SliderComponent,
   ],
   imports: [
     BrowserModule,

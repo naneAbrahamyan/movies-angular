@@ -1,0 +1,11 @@
+  <div class="control-buttons">
+    <button (click)="onPrev()" class="prev"> &lt; </button>
+    <button (click)="onNext()" class="next"> > </button>
+  </div>
+  <div class="carousel-container">  
+    <div *ngFor="let item of data" class="carousel-item" #test [style.transform]="'translateX(' + -test.offsetWidth * currentIndex + 'px)'">  
+      <a [routerLink]="'/details/' + item['id']" >
+      <img [src] = "'https://image.tmdb.org/t/p/w500/' + item['poster_path']" />
+      </a>
+    </div>
+</div>

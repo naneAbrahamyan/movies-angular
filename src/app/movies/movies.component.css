@@ -1,6 +1,5 @@
 .container {
     width: 100%;
-    padding: 50px 10px;
     overflow: hidden;
   }
   
@@ -80,4 +79,13 @@
     background-color: inherit;
     outline: none;
     border: none;
+  }
+
+  .carousel-poster {
+    height: auto;
+  }
+
+  .slider {
+    position: relative;
+    height: 500px;
   }
